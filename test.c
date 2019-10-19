@@ -1,11 +1,6 @@
-int test1(int a){
-	int* p = &a;
-	*p = *p + 1;
-	return *p;
-}
-
-int test2(int a){
-	int p = a;
-	p = p + 1;
-	return p;
+int a = 10;
+int test(int b){
+	int *p = &a;
+	*p = b+1;
+	return a; 
 }
